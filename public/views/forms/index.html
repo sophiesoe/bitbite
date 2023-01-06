@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+  </head>
+  <body>
+    <center>
+      <h1>Login Form</h1>
+      <form action="../../../index.html">
+        <label for="e-mail">Your e-mail address</label> <br /><br />
+        <!-- validate @  -->
+        <input
+          type="email"
+          id="e-mail"
+          name="e-mail"
+          required
+          placeholder="Your email address"
+          autocomplete="off"
+        />
+        <br />
+        <br />
+
+        <label for="password">Your Password</label> <br />
+        <br />
+        <!-- text => ....  -->
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="Your password"
+        />
+        <br />
+        <br />
+        <div>
+          <button>Login</button>
+        </div>
+        <p>
+          Don't you have an account?
+          <a href="./sing-up.html">Create an account</a>
+        </p>
+      </form>
+    </center>
+  </body>
+</html>

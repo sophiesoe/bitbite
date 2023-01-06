@@ -1,0 +1,21 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #2d2d2d;
+}
+ul li {
+  line-height: 2rem;
+}
+img {
+  object-fit: cover;
+}
+a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+section {
+  padding-block: 5rem;
+}
+article {
+  margin-block: 5rem;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <title>BitBite | My Cart</title>
+    <style>
+      .cart td {
+        padding: 2rem 3rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- First navbar  -->
+      <nav>
+        <table>
+          <tr>
+            <td width="200">
+              <center>
+                <a href="../../index.html">
+                  <img
+                    src="../assets/img/logo.png"
+                    alt="Logo"
+                    height="50"
+                    width="50"
+                  />
+                </a>
+              </center>
+            </td>
+            <td width="700">
+              <center>
+                <input
+                  type="search"
+                  placeholder="Hungry..?"
+                  style="width: 700px; height: 2em"
+                />
+              </center>
+            </td>
+            <td>
+              <button>
+                <img
+                  src="../assets/img/search.png"
+                  alt="Search"
+                  width="20"
+                  height="20"
+                />
+              </button>
+            </td>
+            <td width="100" align="right">
+              <a href="./cart.html">
+                <img
+                  src="../assets/img/cart.png"
+                  alt="My Cart"
+                  width="25"
+                  height="25"
+                />
+              </a>
+            </td>
+            <td width="100" align="right">
+              <button type="button">
+                <a href="#">
+                  <strong>
+                    <font size="3">Login</font>
+                  </strong>
+                </a>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </nav>
+      <hr />
+      <!-- Second navbar  -->
+      <nav>
+        <table>
+          <tr>
+            <td width="800">
+              <center>
+                <a href="./foods.html">Foods</a>
+                &nbsp; &nbsp;
+                <a href="./drinks.html">Drinks</a>
+                &nbsp; &nbsp;
+                <a href="./contact.html">Contact</a>
+              </center>
+            </td>
+            <td width="300">
+              <a href="tel:+95912345678">
+                <img
+                  src="../assets/img/phone.png"
+                  alt="Phone"
+                  width="25"
+                  height="25"
+                />
+                +95912345678
+              </a>
+            </td>
+            <td width="300">
+              <a href="mailto:bitbite@mail.com">
+                <img
+                  src="../assets/img/email.png"
+                  alt="Email"
+                  width="25"
+                  height="25"
+                />
+                bitbite@mail.com</a
+              >
+            </td>
+          </tr>
+        </table>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <form action="../../index.html">
+        <center>
+          <table class="cart">
+            <tr>
+              <th>Order No.</th>
+              <th>Product Image</th>
+              <th>Product Name</th>
+              <th>Qty.</th>
+              <th>Unit Price</th>
+              <th>Remove Items</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <img
+                  src="https://images.unsplash.com/photo-1626804475297-41608ea09aeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  alt="Noodles"
+                  width="80"
+                  height="80"
+                />
+              </td>
+              <td>Noodles</td>
+              <td>
+                <input type="number" min="1" value="1" style="width: 25%" />
+              </td>
+              <td>3000 MMK</td>
+              <td>
+                <form action="./cart.html">
+                  <button>Delete</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img
+                  src="https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt="Toast and Egg"
+                  width="80"
+                  height="80"
+                />
+              </td>
+              <td>Toast and Egg</td>
+              <td>
+                <input type="number" min="1" value="1" style="width: 25%" />
+              </td>
+              <td>3000 MMK</td>
+              <td>
+                <form action="./cart.html">
+                  <button>Delete</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align: left"><h3>Total Price</h3></td>
+              <td>3000MMK</td>
+              <td>
+                <form action="./cart.html">
+                  <button>Update cart</button>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </center>
+        <div style="text-align: right; margin: 0 5rem">
+          <button style="padding: 0.5rem 5rem">Checkout</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <center>
+          <a href="../../index.html">Home</a> &nbsp; &#47; &nbsp;
+          <a href="./foods.html">Foods</a> &nbsp; &#47; &nbsp;
+          <a href="./drinks.html">Drinks</a>
+        </center>
+      </div>
+      <div style="background-color: skyblue">
+        <center>
+          <p style="margin-bottom: 0; padding-block: 10px; color: white">
+            &copy; 2023 All Right Reserved | BitBite
+          </p>
+        </center>
+      </div>
+    </footer>
+  </body>
+</html>

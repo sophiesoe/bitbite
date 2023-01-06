@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <progress max="100" value="5" style="width: 100%"></progress>
+    <center>
+      <h1>Signup Form</h1>
+      <form action="../../../index.html">
+        <fieldset>
+          <legend>Basic Information</legend>
+          <div>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" placeholder="John" required />
+            &nbsp; &nbsp;
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" placeholder="Smith" required />
+          </div>
+
+          <br />
+          <br />
+
+          <div>
+            <label for="email">Your email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@mail.com"
+              autocomplete="off"
+            />
+            &nbsp;
+            <span><strong>OR</strong></span>
+            &nbsp;
+            <label for="phone">Your phone</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="09123456789"
+              autocomplete="off"
+            />
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="bday">Your birthday</label>
+            <input type="date" />
+            &nbsp; &nbsp;
+            <label for="gender">Your gender</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="none" name="gender" />
+            <label for="none">Rather not say</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div>
+            <label for="country">Your Country</label>
+            <select name="" id="country" required autofocus>
+              <option value="countries" selected disabled>Countries</option>
+              <option value="myanmar">Myanmar</option>
+              <option value="us">US</option>
+              <option value="thailand">Thailand</option>
+              <option value="singapore">Singapore</option>
+            </select>
+            &nbsp; &nbsp;
+            <label for="cities">Your City</label>
+            <input list="cities" id="city" name="city" autocomplete="off" />
+            <datalist id="cities">
+              <option value="Yangon" />
+              <option value="Ayeyawaddy"></option>
+              <option value="Mandalay" />
+              <option value="Pyin Oo Lwin" />
+            </datalist>
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="fav-color">Your Favorite Color</label>
+            <input type="color" id="fav-color" name="fav-color" />
+            &nbsp; &nbsp;
+            <label for="interest">Your fields of interest:</label>
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" id="drawing" />
+            &nbsp;
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="reading" />
+            &nbsp;
+            <label for="others">Others</label>
+            <input type="checkbox" id="others" />
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="introvert">Introvert (in percentage)</label>
+            <input type="range" id="introvert" step="10" value="100" />
+            &nbsp; &nbsp;
+            <label for="extrovert">Extrovert (in percentage)</label>
+            <input type="range" id="extrovert" step="10" />
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="sibling">Your siblings</label>
+            <input type="number" min="0" step="1" value="0" />
+            &nbsp; &nbsp;
+            <label for="cousin">Your cousins</label>
+            <input type="number" min="0" step="1" value="0" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Summary</legend>
+          <label for="bio">Your brief bio (not more than 300 characters)</label>
+          <br />
+          <textarea
+            name=""
+            id="bio"
+            cols="50"
+            rows="7"
+            wrap="hard"
+            maxlength="300"
+          ></textarea>
+          <br /><br />
+          <details open>
+            <summary>Fact 1</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate, magnam deleniti? Quidem consequuntur, ullam, vel aut
+              dolor beatae est architecto sed magni sequi nemo libero id
+              voluptas fugit numquam maxime.
+            </p>
+            <button type="button">More details</button>
+          </details>
+          <br />
+          <details>
+            <summary>Fact 2</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate, magnam deleniti? Quidem consequuntur, ullam, vel aut
+              dolor beatae est architecto sed magni sequi nemo libero id
+              voluptas fugit numquam maxime.
+            </p>
+            <button type="button">More details</button>
+          </details>
+        </fieldset>
+        <br />
+        <br />
+        <br />
+        <dialog id="dialog">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1554435493-93422e8220c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnVpbGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt="our headquarters"
+              height="300"
+            />
+            <figcaption>Our Headquarters</figcaption>
+          </figure>
+          <button type="button" id="close">Close</button>
+        </dialog>
+        <button type="button" id="open">See our headquarters</button>
+        <br />
+        <br />
+        <div>
+          <input type="checkbox" id="agree" required />
+          <label for="agree">Do you agree with our terms and policies?</label>
+        </div>
+        <br />
+        <div>
+          <button>Singup</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </center>
+    <script>
+      document.getElementById("open").addEventListener("click", function () {
+        document.getElementById("dialog").show();
+      });
+      document.getElementById("close").addEventListener("click", function () {
+        document.getElementById("dialog").close();
+      });
+    </script>
+  </body>
+</html>
